@@ -1,0 +1,167 @@
+/**
+ * /* 常用类名
+ *
+ * @format
+ */
+
+.generate(100);
+
+.generate(@n, @i: 5) when (@i =< @n) {
+  .mar-@{i} {
+    margin: @i*1px;
+  }
+
+  .mar-l-@{i} {
+    margin-left: @i*1px;
+  }
+
+  .mar-r-@{i} {
+    margin-right: @i*1px;
+  }
+
+  .mar-t-@{i} {
+    margin-top: @i*1px;
+  }
+
+  .mar-b-@{i} {
+    margin-bottom: @i*1px;
+  }
+
+  .pad-@{i} {
+    padding: @i*1px;
+  }
+
+  .pad-l-@{i} {
+    padding-left: @i*1px;
+  }
+
+  .pad-r-@{i} {
+    padding-right: @i*1px;
+  }
+
+  .pad-t-@{i} {
+    padding-top: @i*1px;
+  }
+
+  .pad-b-@{i} {
+    padding-bottom: @i*1px;
+  }
+
+  .generate(@n, (@i + 5));
+}
+
+.generateHeight(100);
+
+.generateHeight(@n, @i: 10) when (@i =< @n) {
+  .height-@{i} {
+    height: @i*1px;
+  }
+
+  .generateHeight(@n, (@i + 10));
+}
+
+.generateLineHeight(100);
+
+.generateLineHeight(@n, @i: 10) when (@i =< @n) {
+  .line-height-@{i} {
+    line-height: @i*1px;
+  }
+
+  .generateLineHeight(@n, (@i + 10));
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aaa;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aaa;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+
+.flex-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.blod-font {
+  font-weight: bold;
+}
+
+.size100 {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-content-between {
+  justify-content: space-between;
+}
+
+.list-empty {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+.model-wrap {
+  padding: 20px 140px 40px 40px;
+}
